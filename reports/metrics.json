@@ -1,0 +1,28 @@
+{
+  "data_source": "synthetic_movielens_schema",
+  "is_synthetic": true,
+  "note": "Metrics on synthetic data illustrate the pipeline only and are not real MovieLens results.",
+  "relevance_threshold": 4.0,
+  "split": "per_user_temporal_holdout_20pct_min_5_ratings",
+  "n_ratings_total": 71707,
+  "n_train": 57367,
+  "n_test": 14340,
+  "n_users": 600,
+  "n_movies_catalog": 900,
+  "item_based_cf": {
+    "precision@5": 0.01966666666666667,
+    "recall@5": 0.007839093132035766,
+    "precision@10": 0.03633333333333333,
+    "recall@10": 0.028563042059589937,
+    "coverage@10": 0.9544444444444444,
+    "users_evaluated": 600
+  },
+  "popularity_baseline": {
+    "precision@5": 0.03333333333333333,
+    "recall@5": 0.011858066333852108,
+    "precision@10": 0.03633333333333334,
+    "recall@10": 0.02894302420152299,
+    "coverage@10": 0.022222222222222223,
+    "users_evaluated": 600
+  }
+}
